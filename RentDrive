@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="font-family: Times New Roman, sans-serif; background-color: #39F; margin: 0; padding: 0; color: #333;">
+ 
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Rent Drive</h1>
+            <nav>
+            <ul style="list-style-type: none; padding: 0; text-align: center;">
+                   
+<button type="button" onclick="alert('Aceasta este pagina principal&#259')">Acas&#259</button>
+<button type="button" onclick="alert('Aceastea sunt ma&#351inile disponibile')">Ma&#351ini disponibile</button>
+<button type="button" onclick="alert('O mic&#259 despre noi')">Despre noi</button>
+<button type="button" onclick="alert('Ne pute&#355i contacta aici')">Contact</button>
+                 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section - Ma&#351ini disponibile -->
+    <section id="cars">
+        <div class="container">
+<ul style="list-style-type: none; padding: 0; text-align: center;">
+            <h2>Ma&#351ini disponibile pentru &#238nchiriere</h2>
+
+            <!-- Car 1 -->
+            <div class="car">
+                <img src="car1.jpg" alt="BMW X5">
+                <div class="car-details">
+                    <h3>BMW X5</h3>
+                    <p><strong>Pre&#355 pe zi:</strong> 120 EURO</p>
+                    <p><strong>Marca:</strong> BMW</p>
+                    <button class="reserve-btn" onclick="reserveCar('BMW X5')">Rezerv&#259 acum</button>
+                </div>
+            </div>
+<hr align="center" width="50%" size="5" noshade>
+            <!-- Car 2 -->
+            <div class="car">
+                <img src="car2.jpg" alt="Audi A4">
+                <div class="car-details">
+                    <h3>Audi A4</h3>
+                    <p><strong>Pre&#355 pe zi:</strong> 100 EURO</p>
+                    <p><strong>Marca:</strong> Audi</p>
+                    <button class="reserve-btn" onclick="reserveCar('Audi A4')">Rezerv&#259 acum</button>
+                </div>
+            </div>
+<hr align="center" width="50%" size="5" noshade>
+            <!-- Car 3 -->
+            <div class="car">
+                <img src="car3.jpg" alt="Volkswagen Golf">
+                <div class="car-details">
+                    <h3>Volkswagen Golf</h3>
+                    <p><strong>Pre&#355 pe zi:</strong> 80 EURO</p>
+                    <p><strong>Marca:</strong> Volkswagen</p>
+                    <button class="reserve-btn" onclick="reserveCar('Volkswagen Golf')">Rezerv&#259 acum</button>
+                </div>
+                </div>
+<hr align="center" width="50%" size="5" noshade>
+<!-- Car 4 -->
+            <div class="car">
+                <img src="car4.jpg" alt="Audi Q7">
+                <div class="car-details">
+                    <h3>Audi Q7</h3>
+                    <p><strong>Pre&#355 pe zi:</strong> 150 EURO</p>
+                    <p><strong>Marca:</strong> Audi </p>
+                    <button class="reserve-btn" onclick="reserveCar('Audi Q7')">Rezerv&#259 acum</button>
+                </div>
+                </div>
+
+</ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section - Rezervare -->
+    <section id="reservation">
+        <div class="container">
+            <h2>Rezerv&#259 ma&#351ina ta</h2>
+            <form id="reservation-form">
+                <label for="car-name">Alege ma&#351ina:</label>
+                <select id="car-name" required>
+                    <option value="BMW X5">BMW X5</option>
+                    <option value="Audi A4">Audi A4</option>
+                    <option value="Volkswagen Golf">Volkswagen Golf</option>
+                    <option value="Audi Q7">Audi Q7</option>
+                </select>
+
+                <label for="pickup-date">Data ridic&#259rii:</label>
+                <input type="date" id="pickup-date" required>
+
+                <label for="return-date">Data returnării:</label>
+                <input type="date" id="return-date" required>
+
+                <label for="name">Nume:</label>
+                <input type="text" id="name" placeholder="Introdu numele tău" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Introdu adresa ta de email" required>
+
+                <button type="submit" class="submit-btn">Trimite Rezervarea</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rent a Car | Toate drepturile rezervate</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funcția de rezervare a mașinii
+        function reserveCar(carName) {
+            alert("Ai rezervat masina: " + carName + ". Te rugăm să completezi formularul de mai jos pentru a finaliza rezervarea.");
+        }
+
+        // Eveniment pentru trimiterea formularului de rezervare
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Rezervarea a fost trimisă cu succes! Veti primi un email de confirmare.");
+            this.reset(); // Resetează formularul
+        });
+    </script>
+
+</body>
+</html>
