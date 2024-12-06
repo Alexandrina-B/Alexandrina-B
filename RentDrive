@@ -33,7 +33,7 @@
 
             <!-- Car 1 -->
             <div class="car">
-                <img src="car1.jpg" alt="BMW X5">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fecars.md%2Fro%2Fcatalog%2F3154&psig=AOvVaw0E112yWMfCFr6uc9clpufs&ust=1733590994039000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOir3v_Pk4oDFQAAAAAdAAAAABAE" width="400" style="border-radius: 12px; box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); alt="BMW X5">
                 <div class="car-details">
                     <h3>BMW X5</h3>
                     <p><strong>Pre&#355 pe zi:</strong> 120 EURO</p>
